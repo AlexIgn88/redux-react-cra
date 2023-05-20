@@ -2,6 +2,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from './actions.js';
 import { selectCount } from './selectors.js';
 
+// import { store } from "./store.js";
+
 export default function Counter() {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
@@ -11,3 +13,9 @@ export default function Counter() {
     <button onClick={() => dispatch(decrement())}> - </button>
   </fieldset>;
 }
+
+// store.subscribe(() => console.log(store.getState()));
+// store.dispatch(increment());
+// store.dispatch(increment());
+// store.dispatch(increment());
+// store.dispatch(decrement());

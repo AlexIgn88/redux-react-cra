@@ -14,5 +14,5 @@ function counterReducer(state = { value: 0 }, action) {
 }
 
 export const store = createStore(counterReducer);
-// console.log('store=',store);
-// console.log('state=', store.getState());
+console.log('store=',store);
+console.log('state=', store.getState());
