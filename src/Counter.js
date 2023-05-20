@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement } from './actions';
-import { selectCount } from './selectors';
+import { increment, decrement } from './actions.js';
+import { selectCount } from './selectors.js';
 
 export default function Counter() {
   const count = useSelector(selectCount);

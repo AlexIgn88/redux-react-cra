@@ -1,4 +1,5 @@
-import { createStore } from 'redux';
+// import { createStore } from 'redux';
+import { legacy_createStore as createStore } from 'redux';
 import { INCREMENT, DECREMENT } from './actions.js';
 
 function counterReducer(state = { value: 0 }, action) {
